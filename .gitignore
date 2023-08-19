@@ -1,0 +1,4 @@
+# neovim stuff
+nvim/node_modules
+nvim/package.json
+nvim/package-lock.json
