@@ -32,9 +32,8 @@ To install the dotfiles, follow these steps:
 
 	```sh
     python3 install.py all
-
-    Follow any prompts or messages to confirm or complete the installation.
 	```
+    Follow any prompts or messages to confirm or complete the installation.
 
 ## Modules
 ### Neovim (nvim)
@@ -47,4 +46,4 @@ The Neovim module contains configurations for the Neovim text editor.
 
 ## License
 
-This repository is licensed under the MIT LICENSE.
+This repository is licensed under the MIT License.
