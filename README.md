@@ -23,12 +23,12 @@ To install the dotfiles, follow these steps:
 	python3 install.py nvim
 	```
 
-You can also install multiple modules at once:
+	You can also install multiple modules at once:
 	```sh
 	python3 install.py nvim zsh
 	```
 
-If you want to install all available modules, use:
+	If you want to install all available modules, use:
 
 	```sh
     python3 install.py all
