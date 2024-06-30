@@ -12,9 +12,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
   -- Color Themes
-  use { "catppuccin/nvim", as = "catppuccin" }
   use "rebelot/kanagawa.nvim"
-  use { "ellisonleao/gruvbox.nvim" }
 
   -- Game
   use 'ThePrimeagen/vim-be-good'
@@ -52,9 +50,4 @@ return require('packer').startup(function(use)
   use 'romgrk/barbar.nvim'
   -- Nvim tree
   use 'nvim-tree/nvim-tree.lua'
-  -- Lualine
-  use {
-	  'nvim-lualine/lualine.nvim',
-	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
 end)
