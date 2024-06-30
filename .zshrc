@@ -92,5 +92,5 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # Aliases
-alias zshconfig="nvim ~/repos/dotfies/.zshrc"
+alias zshconfig="nvim ~/repos/dotfiles/.zshrc"
 alias nvimconfig="nvim ~/repos/dotfiles/nvim"
