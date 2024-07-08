@@ -78,5 +78,5 @@ PATH="/home/andre/.local/bin:$PATH"
 
 
 # Aliases
-alias zshconfig="nvim ~/repos/dotfiles/.zshrc"
-alias nvimconfig="nvim ~/repos/dotfiles/nvim"
+alias zshconfig="cd ~/repos/dotfiles/.zshrc && nvim"
+alias nvimconfig="cd ~/repos/dotfiles/nvim && nvim"
