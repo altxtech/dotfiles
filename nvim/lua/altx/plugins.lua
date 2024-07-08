@@ -39,13 +39,6 @@ local plugins = {
 	}, --snippet engine
         {"williamboman/mason.nvim"}, --lsp package manager
         {"williamboman/mason-lspconfig.nvim"}, --lsp package manager configs
-		{
-			"Tsuzat/NeoSolarized.nvim",
-			lazy = false, -- make sure we load this during startup if it is your main colorscheme
-			priority = 1000, -- make sure to load this before all the other start plugins
-			config = function()
-			  vim.cmd [[ colorscheme NeoSolarized ]]
-			end
-		}
+		{"rebelot/kanagawa.nvim"}
 }
 require("lazy").setup(plugins, {})

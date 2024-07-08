@@ -1,30 +1,28 @@
-local ok_status, NeoSolarized = pcall(require, "NeoSolarized")
+-- Default options:
+require('kanagawa').setup({
+    compile = false,             -- enable compiling the colorscheme
+    undercurl = true,            -- enable undercurls
+    commentStyle = { italic = true },
+    functionStyle = {},
+    keywordStyle = { italic = true},
+    statementStyle = { bold = true },
+    typeStyle = {},
+    transparent = false,         -- do not set background color
+    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+    colors = {                   -- add/modify theme and palette colors
+        palette = {},
+        theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+    },
+    overrides = function(colors) -- add/modify highlights
+        return {}
+    end,
+    theme = "wave",              -- Load "wave" theme when 'background' option is not set
+    background = {               -- map the value of 'background' option to a theme
+        dark = "wave",           -- try "dragon" !
+        light = "lotus"
+    },
+})
 
-if not ok_status then
-  return
-end
-
--- Default Setting for NeoSolarized
-
-NeoSolarized.setup {
-  style = "dark", -- "dark" or "light"
-  transparent = true, -- true/false; Enable this to disable setting the background color
-  terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-  enable_italics = true, -- Italics for different hightlight groups (eg. Statement, Condition, Comment, Include, etc.)
-  styles = {
-    -- Style to be applied to different syntax groups
-    comments = { italic = true },
-    keywords = { italic = true },
-    functions = { bold = true },
-    variables = {},
-    string = { italic = true },
-    underline = true, -- true/false; for global underline
-    undercurl = true, -- true/false; for global undercurl
-  },
-  -- Add specific hightlight groups
-  on_highlights = function(highlights, colors) 
-    -- highlights.Include.fg = colors.red -- Using `red` foreground for Includes
-  end, 
-}
--- Set colorscheme to NeoSolarized
-vim.cmd [[ colorscheme NeoSolarized ]]
+-- setup must be called before loading
+vim.cmd.colorscheme("kanagawa")
